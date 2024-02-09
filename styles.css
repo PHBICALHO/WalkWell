@@ -9,32 +9,31 @@ body {
 }
 
 .container {
-    margin-top: 500px; /* Ajuste manual da posição vertical */
-    margin-left: 20px; /* Ajuste manual da posição horizontal */
+    width: 100vw; /* Ocupa 100% da largura da tela */
+    margin-top: 500px;
 }
 
 .main-content {
     padding: 20px;
     text-align: center;
-    background-color: rgb(255, 255, 255); /* Adicionando um fundo escuro sem afetar a logo */
+    background-color: rgb(255, 255, 255);
 }
 
 .content-wrapper {
     display: flex;
-    flex-direction: column; /* Alteração para empilhar os elementos verticalmente em dispositivos móveis */
+    flex-direction: column;
     align-items: center;
 }
 
 .biography {
     font-size: 18px;
     margin-top: 20px;
-    flex: 1; /* Ocupa o espaço restante */
 }
 
 .profile-image {
-    width: 100%; /* Alteração para a largura ocupar 100% da largura da tela */
-    max-width: 500px; /* Adicionado um máximo para evitar que a imagem fique muito grande */
-    margin-left: 20px; /* Espaço entre a biografia e a imagem */
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
 }
 
 .whatsapp-button {
@@ -45,14 +44,14 @@ body {
 .whatsapp-button a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #25D366; /* Cor do WhatsApp */
+    background-color: #25D366;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.5); /* Adicionando um fundo escuro sem afetar a logo */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -61,16 +60,12 @@ footer {
 
 /* Media query para dispositivos com largura máxima de 600px (móveis) */
 @media (max-width: 600px) {
-    .container {
-        margin-top: 50px; /* Ajuste manual da posição vertical */
-    }
-
     .content-wrapper {
-        align-items: flex-start; /* Alinhar os elementos no início em dispositivos móveis */
+        align-items: flex-start;
     }
 
     .profile-image {
-        max-width: 100%; /* Largura máxima de 100% para garantir responsividade */
-        margin-left: 0; /* Remover o espaço entre a biografia e a imagem */
+        max-width: 100%;
+        margin-left: 0;
     }
 }
